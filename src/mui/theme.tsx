@@ -3,6 +3,7 @@ import Button from "./Overrides/Button";
 import Card from "./Overrides/Card";
 import Paper from "./Overrides/Paper";
 import TextField from "./Overrides/TextField";
+import Autocomplete from "./Overrides/Autocomplete";
 import palette from "./palette";
 
 // Create a theme instance.
@@ -26,6 +27,7 @@ const theme = createTheme({
     ...Button,
     ...TextField,
     ...Paper,
+    ...Autocomplete,
   } as any,
 });
 

@@ -1,0 +1,33 @@
+@import "../../styles/variables.scss";
+
+.container {
+  background-color: rgb(255 255 255 / 25%);
+  backdrop-filter: blur(4px);
+  padding: 32px;
+  overflow: unset;
+}
+
+.sourceRow {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.swapIcon {
+  border: 1px solid;
+  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $primary-color;
+}
+
+.tokenRow {
+  margin-top: 24px;
+}
+
+.destinationRow {
+  margin-top: 24px;
+}

@@ -1,6 +1,8 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import CrossChain from "../components/CrossChain/CrossChain";
 import styles from "../styles/Home.module.scss";
+import { WalletOutline } from "mdi-material-ui";
 
 const Home: NextPage = () => {
   return (
@@ -12,11 +14,18 @@ const Home: NextPage = () => {
       </Head>
 
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="#">Violet!</a>
-        </h1>
-
-        <p className={styles.description}>A Simple Cross-chain Crypto Wallet</p>
+        <div className={styles.heroSection}>
+          <button className={styles.connectWalletButton}>
+            <WalletOutline /> Connect Wallet
+          </button>
+          <div>
+            <h1 className={styles.title}>
+              Welcome to <a href="#">Violet!</a>
+            </h1>
+            <p className={styles.description}>A Simple Cross-chain Crypto Wallet</p>
+          </div>
+          <CrossChain />
+        </div>
       </main>
     </div>
   );
